@@ -1,20 +1,20 @@
 @use "../../variables" as *;
 
 span {
-  background-color: black;
+  background-color: $black;
   padding: 12.5px 64px;
-  color: white;
-  font-size: 14px;
+  color: $white;
+  font-size: $S;
   border-radius: 0%;
   transition-duration: 0.2s;
 
   &:hover {
-    background-color: #442606;
+    background-color: $orange_bistre;
     cursor: pointer;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: $md) and (max-width: $lg) {
   span {
     padding: 17.5px 49px;
   }
