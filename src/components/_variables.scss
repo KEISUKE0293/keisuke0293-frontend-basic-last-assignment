@@ -6,7 +6,7 @@ $gray_gainsboro: #dddddd;
 $gray_nobel: #999999;
 $orange_zorba: #a19283;
 $orange_bistre: #442606;
-$black_50: rgba(#000000, 50%);
+$black_50: rgba(#000000, 0.5);
 $black: #000000;
 
 $fontsize-example: 16px;
@@ -17,12 +17,10 @@ $L: 20px;
 $XL: 36px;
 $XXL: 40px;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Roboto&display=swap');
-$fontfamily-gothic: 'Noto Sans JP', sans-serif;
-$fontfamily-mincho: 'Noto Serif JP', serif;
-$fontfamily-roboto: 'Roboto', sans-serif;
+$fontfamily-gothic: 'Noto Sans JP', sans-serif, 'ＭＳ Ｐゴシック';
+$fontfamily-mincho: 'Noto Serif JP', serif, 'ＭＳ Ｐゴシック';
+$fontfamily-roboto: 'Roboto', sans-serif, 'ＭＳ Ｐゴシック';
 
-$xs: 0;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;

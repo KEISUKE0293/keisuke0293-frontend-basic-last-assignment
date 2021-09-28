@@ -1,9 +1,5 @@
-@use "_variables" as *;
+@use "./variables" as *;
 
 body {
   font-family: $fontfamily-gothic;
-}
-
-h2 {
-  font-size: 38px;
 }
