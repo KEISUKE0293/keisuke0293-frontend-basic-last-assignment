@@ -6,23 +6,23 @@ $gray_gainsboro: #dddddd;
 $gray_nobel: #999999;
 $orange_zorba: #a19283;
 $orange_bistre: #442606;
-$black_50: rgba(#000000, 0.5);
+$black_50: rgba(0, 0, 0, 0.5);
 $black: #000000;
 
 $fontsize-example: 16px;
-$XS: 12px;
-$S: 14px;
-$M: 16px;
-$L: 20px;
-$XL: 36px;
-$XXL: 40px;
+$fontsize-XS: 12px;
+$fontsize-S: 14px;
+$fontsize-M: 16px;
+$fontsize-L: 20px;
+$fontsize-XL: 36px;
+$fontsize-XXL: 40px;
 
 $fontfamily-gothic: 'Noto Sans JP', sans-serif, 'ＭＳ Ｐゴシック';
 $fontfamily-mincho: 'Noto Serif JP', serif, 'ＭＳ Ｐゴシック';
 $fontfamily-roboto: 'Roboto', sans-serif, 'ＭＳ Ｐゴシック';
 
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
