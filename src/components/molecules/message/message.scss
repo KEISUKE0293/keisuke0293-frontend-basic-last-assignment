@@ -9,32 +9,30 @@
 
   h2 {
     font-family: $fontfamily-mincho;
-    font-size: $XL;
+    font-size: $fontsize-XL;
     line-height: 54px;
-    margin: 52px 0 0 0;
+    margin-top: 52px;
   }
 
   p {
-    font-size: $S;
+    font-size: $fontsize-S;
     line-height: 36px;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
   }
-}
 
-@media (max-width: $md) {
-  .msg {
+  @media (max-width: $breakpoint-md) {
     height: 128px;
     width: 200px;
 
     h2 {
-      font-size: $L;
+      font-size: $fontsize-L;
       line-height: 30px;
-      margin: 32px 0 0 0;
+      margin-top: 32px;
     }
 
     p {
       line-height: 36px;
-      margin: 6px 0 0 0;
+      margin-top: 6px;
     }
   }
 }
