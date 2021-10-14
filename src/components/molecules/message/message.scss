@@ -2,9 +2,7 @@
 
 .msg {
   color: $black;
-  display: inline-block;
-  height: 204px;
-  width: 327px;
+  padding: 52px, 20px;
   text-align: center;
 
   h2 {
@@ -21,8 +19,7 @@
   }
 
   @media (max-width: $breakpoint-md) {
-    height: 128px;
-    width: 200px;
+    padding: 32px, 20px;
 
     h2 {
       font-size: $fontsize-L;
