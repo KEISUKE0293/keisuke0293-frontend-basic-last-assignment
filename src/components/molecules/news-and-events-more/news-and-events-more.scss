@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.news-and-events-more {
+  color: $black;
+  height: 20px;
+  transition: color 0.2s ease;
+  width: 112px;
+
+  a {
+    font-size: $fontsize-S;
+  }
+
+  i {
+    margin: 3px 0 0 16px;
+  }
+
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+}
