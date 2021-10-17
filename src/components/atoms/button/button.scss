@@ -1,28 +1,27 @@
 @use "../../variables" as *;
 
 .button {
-  align-items: center;
   background-color: $black;
   color: $white;
-  display: flex;
+  display: inline-block;
   font-size: $fontsize-S;
-  height: 45px;
-  justify-content: center;
+  padding: 12.5px 0;
+  text-align: center;
   transition: background-color 0.2s ease;
   width: 180px;
-
+  
   &:hover {
     background-color: $orange_bistre;
     color: $white;
+    text-decoration: none;
   }
 
   @media (min-width: $breakpoint-md) {
-    height: 55px;
+    padding: 17.5px 0;
     width: 150px;
   }
   
   @media (min-width: $breakpoint-lg) {
-    height: 55px;
     width: 200px;
   }
 }
