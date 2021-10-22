@@ -9,7 +9,7 @@
   text-align: center;
   transition: background-color 0.2s ease;
   width: 180px;
-  
+
   &:hover {
     background-color: $orange_bistre;
     color: $white;
@@ -20,7 +20,7 @@
     padding: 17.5px 0;
     width: 150px;
   }
-  
+
   @media (min-width: $breakpoint-lg) {
     width: 200px;
   }
