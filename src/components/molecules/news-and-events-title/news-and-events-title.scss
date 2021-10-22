@@ -1,39 +1,25 @@
 @use "../../variables" as *;
 
 .news-and-events-title {
+  align-items: center;
   color: $black;
   display: flex;
   float: left;
-  height: 61px;
-  width: 133px;
 
   h3 {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
-    height: 29px;
-    width: 53px;
   }
 
   h4 {
     font-size: $fontsize-M;
-    height: 23px;
-    margin-top: 3px;
+    padding-left: 16px;
     text-align: right;
-    width: 80px;
   }
 
   @media (min-width: $breakpoint-lg) {
-    height: 89px;
-    width: 185px;
-
     h3 {
       font-size: $fontsize-XXL;
-      height: 57px;
-      width: 105px;
-    }
-
-    h4 {
-      margin-top: 17px;
     }
   }
 }
