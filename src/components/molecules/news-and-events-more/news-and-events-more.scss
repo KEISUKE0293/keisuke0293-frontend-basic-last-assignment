@@ -1,17 +1,17 @@
 @use "../../variables" as *;
 
 .news-and-events-more {
+  align-items: center;
   color: $black;
-  height: 20px;
+  display: flex;
   transition: color 0.2s ease;
-  width: 112px;
 
   a {
     font-size: $fontsize-S;
   }
 
   i {
-    margin: 3px 0 0 16px;
+    padding-left: 16px;
   }
 
   &:hover {
