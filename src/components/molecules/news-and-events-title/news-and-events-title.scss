@@ -4,22 +4,18 @@
   align-items: center;
   color: $black;
   display: flex;
-  float: left;
 
-  h3 {
+  .NAEtitle {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
-  }
 
-  h4 {
-    font-size: $fontsize-M;
-    padding-left: 16px;
-    text-align: right;
-  }
-
-  @media (min-width: $breakpoint-lg) {
-    h3 {
+    @media (min-width: $breakpoint-lg) {
       font-size: $fontsize-XXL;
     }
+  }
+
+  .jpNAEtitle {
+    font-size: $fontsize-M;
+    margin-left: 16px;
   }
 }
