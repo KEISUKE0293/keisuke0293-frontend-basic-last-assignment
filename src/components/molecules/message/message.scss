@@ -14,7 +14,6 @@
   p {
     font-size: $fontsize-S;
     line-height: 36px;
-    margin-top: 6px;
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -23,10 +22,6 @@
     h2 {
       font-size: $fontsize-XL;
       line-height: 54px;
-    }
-
-    p {
-      margin-top: 10px;
     }
   }
 }
