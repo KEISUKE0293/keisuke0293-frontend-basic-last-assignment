@@ -4,14 +4,11 @@
   align-items: center;
   color: $black;
   display: flex;
+  font-size: $fontsize-S;
   transition: color 0.2s ease;
 
-  a {
-    font-size: $fontsize-S;
-  }
-
   i {
-    padding-left: 16px;
+    margin-left: 16px;
   }
 
   &:hover {
