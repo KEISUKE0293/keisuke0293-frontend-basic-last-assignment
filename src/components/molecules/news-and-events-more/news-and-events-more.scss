@@ -5,6 +5,7 @@
   color: $black;
   display: flex;
   font-size: $fontsize-S;
+  text-decoration: none;
   transition: color 0.2s ease;
 
   i {
@@ -13,6 +14,5 @@
 
   &:hover {
     color: $gray_nobel;
-    text-decoration: none;
   }
 }
