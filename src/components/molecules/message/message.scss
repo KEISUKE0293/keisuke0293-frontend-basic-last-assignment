@@ -2,6 +2,8 @@
 
 .msg {
   color: $black;
+  display: flex;
+  flex-direction: column;
   padding: 32px 20px;
   text-align: center;
 
