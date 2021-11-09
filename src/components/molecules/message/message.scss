@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 32px 20px;
-  text-align: center;
+  align-items: center;
 
   h2 {
     font-family: $fontfamily-mincho;
@@ -17,6 +17,7 @@
   p {
     font-size: $fontsize-S;
     line-height: 36px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $breakpoint-lg) {
