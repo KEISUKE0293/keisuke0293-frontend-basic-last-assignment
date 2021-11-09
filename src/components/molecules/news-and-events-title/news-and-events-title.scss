@@ -2,19 +2,19 @@
 
 .news-and-events-title {
   align-items: center;
-  color: $black;
   display: flex;
 
   h3 {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
+    margin-bottom: 0;
 
     @media (min-width: $breakpoint-lg) {
       font-size: $fontsize-XXL;
     }
   }
 
-  p {
+  span {
     font-size: $fontsize-M;
     margin-left: 16px;
   }
