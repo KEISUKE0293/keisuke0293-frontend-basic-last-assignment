@@ -3,18 +3,15 @@
 .news-and-events-title {
   align-items: center;
   display: flex;
+  font-family: $fontfamily-mincho;
+  font-size: $fontsize-L;
 
-  h3 {
-    font-family: $fontfamily-mincho;
-    font-size: $fontsize-L;
-    margin-bottom: 0;
-
-    @media (min-width: $breakpoint-lg) {
-      font-size: $fontsize-XXL;
-    }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $fontsize-XXL;
   }
 
   span {
+    font-family: $fontfamily-gothic;
     font-size: $fontsize-M;
     margin-left: 16px;
   }
