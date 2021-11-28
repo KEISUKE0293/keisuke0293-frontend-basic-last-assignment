@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.list-group {
+  border-radius: 0%;
+  padding: 32px 0 30px;
+  width: 100%;
+  .list-group-item {
+    padding: 20px 0 20px 20px;
+    span {
+      color: $gray_nobel;
+      font-size: $fontsize-XS;
+      padding-bottom: 10px;
+    }
+    a {
+      color: $black;
+      display: block;
+      font-size: $fontsize-M;
+      &:hover {
+        color: $orange_bistre;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.news-and-events-more {
+  float: right;
+}
