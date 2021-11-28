@@ -15,20 +15,30 @@
   .plan-text {
     color: $white;
     font-size: $fontsize-L;
+    padding: 20px 0;
     h4 {
+      margin: 0;
       text-align: center;
+      font-weight: 700;
     }
+  }
+  .list-group {
+    border-radius: 0%;
+    font-size: $fontsize-S;
+    text-align: center;
+  }
+  .monthly-price {
+    background-color: $gray_desertStorm;
   }
   .price {
     color: $orange_bistre;
+    font-weight: 700;
     span {
       font-size: $fontsize-L;
+      padding-right: 4px;
     }
     div {
       font-size: $fontsize-XXL;
     }
-  }
-  .monthly {
-    font-size: $fontsize-S;
   }
 }
