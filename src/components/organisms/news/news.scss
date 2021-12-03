@@ -6,7 +6,8 @@
   width: 100%;
   .list-group-item {
     padding: 20px;
-    span {
+    time {
+      display: block;
       color: $gray_nobel;
       font-size: $fontsize-XS;
       padding-bottom: 10px;
@@ -15,6 +16,9 @@
       color: $black;
       display: block;
       font-size: $fontsize-M;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       &:hover {
         color: $orange_bistre;
         cursor: pointer;
@@ -24,5 +28,6 @@
   }
 }
 .news-and-events-more {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
