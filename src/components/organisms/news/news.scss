@@ -7,22 +7,26 @@
   .list-group-item {
     padding: 20px;
     time {
-      display: block;
       color: $gray_nobel;
+      display: block;
       font-size: $fontsize-XS;
       padding-bottom: 10px;
     }
     a {
-      color: $black;
-      display: block;
-      font-size: $fontsize-M;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      h4 {
+        color: $black;
+        display: block;
+        font-size: $fontsize-M;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
       &:hover {
-        color: $orange_bistre;
         cursor: pointer;
         text-decoration: none;
+        h4 {
+          color: $orange_bistre;
+        }
       }
     }
   }
