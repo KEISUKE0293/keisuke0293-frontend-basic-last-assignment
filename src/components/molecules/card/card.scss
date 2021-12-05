@@ -25,6 +25,7 @@
   }
   .card-img {
     height: 100%;
+    overflow: hidden;
     img {
       transition: 0.5s;
       width: 100%;
