@@ -2,17 +2,17 @@
 
 .list-group {
   border-radius: 0%;
-  padding: 32px 0 30px;
+  margin: 32px 0 30px;
   width: 100%;
   .list-group-item {
     padding: 20px;
-    time {
-      color: $gray_nobel;
-      display: block;
-      font-size: $fontsize-XS;
-      padding-bottom: 10px;
-    }
     a {
+      time {
+        color: $gray_nobel;
+        display: block;
+        font-size: $fontsize-XS;
+        margin-bottom: 10px;
+      }
       h4 {
         color: $black;
         display: block;
@@ -21,8 +21,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      &:hover {
-        cursor: pointer;
+    }
+    &:hover {
+      cursor: pointer;
+      a {
         text-decoration: none;
         h4 {
           color: $orange_bistre;
@@ -32,6 +34,5 @@
   }
 }
 .news-and-events-more {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
 }
