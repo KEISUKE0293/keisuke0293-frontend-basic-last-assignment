@@ -4,61 +4,70 @@
   border-radius: 0%;
   padding: 32px 0 30px;
   .list-group-item {
-    display: flex;
     padding: 10px 20px;
-    .article-img {
-      img {
-        display: none;
-      }
-    }
-    article {
-      a {
-        color: $black;
-        display: -webkit-box;
-        font-size: $fontsize-M;
-        overflow: hidden;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        &:hover {
+    a {
+      display: flex;
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        h4 {
           color: $orange_bistre;
-          cursor: pointer;
-          text-decoration: none;
         }
       }
-      time {
-        color: $gray_nobel;
-        display: block;
-        font-size: $fontsize-XS;
-        padding-top: 8px;
-      }
-    }
-    @media (min-width: $breakpoint-md) {
-      align-items: center;
-      display: flex;
-      padding: 0;
       .article-img {
-        overflow: hidden;
         img {
-          display: block;
-          height: 140px;
-          transition: 0.5s;
-          width: 211.11px;
-          &:hover {
-            transform: scale(1.2);
-          }
+          display: none;
         }
       }
       article {
-        padding: 0 24px;
-        a {
-          -webkit-line-clamp: 2;
+        width: 100%;
+        h4 {
+          color: $black;
+          font-size: $fontsize-M;
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        time {
+          color: $gray_nobel;
+          display: block;
+          font-size: $fontsize-XS;
+          padding-top: 8px;
+        }
+      }
+    }
+    @media (min-width: $breakpoint-md) {
+      padding: 0;
+      a {
+        align-items: center;
+        display: flex;
+        .article-img {
+          overflow: hidden;
+          img {
+            display: block;
+            height: 140px;
+            transition: 0.5s;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+        article {
+          padding: 0 24px;
+          width: calc(100% - 221.11px);
+          h4 {
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
         }
       }
     }
   }
 }
 .news-and-events-more {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
 }
-
