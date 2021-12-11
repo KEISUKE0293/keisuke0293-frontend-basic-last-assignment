@@ -2,10 +2,12 @@
 
 .plan {
   .list-group {
+    border-color: $gray_gainsboro;
     border-radius: 0%;
     font-size: $fontsize-S;
     text-align: center;
     .plan-text {
+      border-bottom-color: $gray_gainsboro;
       border-left: none;
       border-right: none;
       border-top: none;
@@ -24,17 +26,18 @@
     .price {
       color: $orange_bistre;
       font-weight: 700;
-      padding-bottom: 16px;
-      span {
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      font-size: $fontsize-XXL;
+      &:before {
+        content: "¥";
         font-size: $fontsize-L;
-        padding-right: 4px;
-      }
-      div {
-        font-size: $fontsize-XXL;
+        padding: 29px 4px 0 0;
       }
     }
     .list-item {
-      padding: 20px 19px;
+      padding: 20px;
     }
   }
 }
@@ -47,7 +50,7 @@
 .plan-even {
   .plan-text {
     background-color: $orange_bistre;
-    padding: 15.5px 0;
+    padding: 16px 0;
   }
   .list-group {
     border: 5px solid $orange_bistre;
