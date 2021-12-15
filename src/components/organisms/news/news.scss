@@ -5,8 +5,10 @@
   margin: 32px 0 30px;
   width: 100%;
   .list-group-item {
-    padding: 20px;
+    padding: 0;
     a {
+      padding: 20px;
+      display: block;
       time {
         color: $gray_nobel;
         display: block;
