@@ -2,7 +2,7 @@
 
 .list-group {
   border-radius: 0%;
-  padding: 32px 0 30px;
+  margin: 32px 0 30px;
   .list-group-item {
     padding: 10px 20px;
     a {
@@ -27,13 +27,14 @@
           margin: 0;
           overflow: hidden;
           text-overflow: ellipsis;
+          transition: 0.5s;
           white-space: nowrap;
         }
         time {
           color: $gray_nobel;
           display: block;
           font-size: $fontsize-XS;
-          padding-top: 8px;
+          margin-top: 8px;
         }
       }
     }
