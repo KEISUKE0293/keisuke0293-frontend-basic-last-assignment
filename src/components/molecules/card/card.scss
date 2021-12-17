@@ -24,13 +24,15 @@
       top: 0;
       z-index: 10;
     }
-    img {
-      transition: 0.5s;
-      width: 100%;
-      @media (min-width: $breakpoint-md) {
-        &:hover {
+    @media (min-width: $breakpoint-md) {
+      &:hover {
+        img {
           transform: scale(1.2);
         }
+      }
+      img {
+        transition: 0.5s;
+        width: 100%;
       }
     }
   }
