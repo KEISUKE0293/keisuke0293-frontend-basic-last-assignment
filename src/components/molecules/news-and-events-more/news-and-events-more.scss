@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.news-and-events-more {
+  align-items: center;
+  color: $black;
+  display: flex;
+  font-size: $fontsize-S;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  i {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+}
