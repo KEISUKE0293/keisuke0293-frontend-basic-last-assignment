@@ -1,8 +1,9 @@
 @use "../../variables" as *;
 
 .list-group {
-  border-radius: 0%;
+  border-radius: 0;
   font-size: $fontsize-S;
+  margin-bottom: 24px;
   text-align: center;
   .plan-text {
     border-bottom-color: $gray_gainsboro;
@@ -10,12 +11,9 @@
     border-right: none;
     border-top: none;
     color: $white;
-    h4 {
-      margin: 0;
-      text-align: center;
-      font-size: $fontsize-L;
-      font-weight: 700;
-    }
+    font-size: $fontsize-L;
+    font-weight: 700;
+    text-align: center;
   }
   .monthly-price {
     background-color: $gray_desertStorm;
