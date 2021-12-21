@@ -6,7 +6,6 @@
   margin-bottom: 24px;
   text-align: center;
   .plan-text {
-    border-bottom-color: $gray_gainsboro;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -22,13 +21,11 @@
     color: $orange_bistre;
     font-weight: 700;
     margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
     font-size: $fontsize-XXL;
     &:before {
       content: "¥";
       font-size: $fontsize-L;
-      padding: 29px 4px 0 0;
+      padding-right: 4px;
     }
   }
   .list-group-item {
