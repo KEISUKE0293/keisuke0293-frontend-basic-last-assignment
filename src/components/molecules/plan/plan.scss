@@ -32,17 +32,17 @@
     padding: 20px 0;
     border-color: $gray_gainsboro;
   }
-}
-.plan-odd {
-  .plan-text {
-    background-color: $orange_zorba;
-    padding: 20px 0;
+  &:nth-child(2n + 1) {
+    .plan-text {
+      background-color: $orange_zorba;
+      padding: 20px 0;
+    }
   }
-}
-.plan-even {
-  border: 5px solid $orange_bistre;
-  .plan-text {
-    background-color: $orange_bistre;
-    padding: 16px 0;
+  &:nth-child(2n) {
+    border: 5px solid $orange_bistre;
+    .plan-text {
+      background-color: $orange_bistre;
+      padding: 16px 0;
+    }
   }
 }
