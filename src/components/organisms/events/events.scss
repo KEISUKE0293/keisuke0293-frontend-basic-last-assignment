@@ -7,14 +7,13 @@
     border-radius: 0;
     margin: 30px 0;
     .list-group-item {
+      border-color: $gray_gainsboro;
       padding: 0;
       a {
         article {
-          display: flex;
-          flex-direction: row;
           padding: 10px 20px;
           width: 100%;
-          .article-img {
+          .article-img-wrapper {
             img {
               display: none;
               width: 221.11px;
@@ -32,7 +31,7 @@
               white-space: nowrap;
             }
             time {
-              color: $gray_nobel;
+              color: $gray_gainsboro;
               display: block;
               font-size: $fontsize-XS;
               margin-top: 8px;
@@ -55,9 +54,8 @@
       }
       @media (min-width: $breakpoint-md) {
         a {
-          align-items: center;
           &:hover {
-            .article-img {
+            .article-img-wrapper {
               img {
                 transform: scale(1.2);
               }
@@ -67,7 +65,7 @@
             align-items: center;
             display: flex;
             padding: 0;
-            .article-img {
+            .article-img-wrapper {
               overflow: hidden;
               img {
                 display: block;
