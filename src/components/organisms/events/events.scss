@@ -3,6 +3,11 @@
 .events {
   display: flex;
   flex-direction: column;
+  .news-and-events-title {
+    span {
+      font-weight: 400;
+    }
+  }
   .events-list {
     border-radius: 0;
     margin: 30px 0;
