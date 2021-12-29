@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.list-group {
+.plan {
   border-radius: 0;
   font-size: $fontsize-S;
   margin-bottom: 24px;
@@ -28,7 +28,7 @@
       padding-right: 4px;
     }
   }
-  .list-group-item {
+  .list-item {
     padding: 20px 0;
     border-color: $gray_gainsboro;
   }
