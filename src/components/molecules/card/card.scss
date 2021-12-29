@@ -6,11 +6,9 @@
   .card-img {
     border-radius: 0;
     overflow: hidden;
-    &:before {
+    &::before {
       border-bottom: 75px solid transparent;
-      border-left: 75px solid $white;
-      border-right: 75px solid transparent;
-      border-top: 75px solid $white;
+      border-left: 150px solid $white;
       position: absolute;
       content: "";
       z-index: 1;
@@ -38,6 +36,7 @@
     }
   }
   .card-body {
+    background-color: $white_smoke;
     padding: 32px 0;
     text-align: center;
     .card-text {
