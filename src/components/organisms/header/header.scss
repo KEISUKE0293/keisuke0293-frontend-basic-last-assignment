@@ -1,0 +1,58 @@
+@use "../../variables" as *;
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+header {
+  align-items: center;
+  background-color: $black;
+  display: flex;
+  height: 60px;
+  padding: 0 16px;
+  justify-content: space-between;
+  .logo {
+    align-items: center;
+    display: flex;
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  width: 220px;
+  display: inline-block;
+  background-color: $black;
+  padding: 0;
+  li {
+    .dropdown-menu-list{
+      background-color: $black;
+      font-size: $fontsize-S;
+      padding: 0;
+      transition: background-color 0.2s ease;
+      .text-wrapper {
+        color: $white;
+        padding: 18px;
+      }
+      &:hover {
+        background-color: $orange_bistre;
+      }
+    }
+  }
+}
+
+a.nav-link {
+  color: $white;
+  display: inline-block;
+  font-size: $fontsize-S;
+  padding: 0;
+  transition: color 0.2s ease;
+  @media (min-width: $breakpoint-lg) {
+    &:hover {
+      color: $gray_nobel;
+    }
+  }
+}
