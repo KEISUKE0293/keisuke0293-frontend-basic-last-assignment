@@ -3,7 +3,6 @@
 .plan {
   border-radius: 0;
   font-size: $fontsize-S;
-  margin-bottom: 24px;
   text-align: center;
   .plan-text {
     border-left: none;
@@ -32,6 +31,9 @@
     padding: 20px 0;
     border-color: $gray_gainsboro;
   }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
   &:nth-child(2n + 1) {
     .plan-text {
       background-color: $orange_zorba;
@@ -42,7 +44,7 @@
     border: 5px solid $orange_bistre;
     .plan-text {
       background-color: $orange_bistre;
-      padding: 16px 0;
+      padding: 15px 0;
     }
   }
 }
