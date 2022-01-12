@@ -1,0 +1,46 @@
+@use "../../variables" as *;
+
+div.top {
+  background-color: $black;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 40px;
+  div.top-image-wrapper {
+    position: relative;
+    p.top-title {
+      color: $white;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-L;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  div.top-msg {
+    color: $white;
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 30px;
+    div.top-image-wrapper {
+      p.top-title {
+        font-size: $fontsize-XL;
+      }
+      img {
+        height: 100vh;
+      }
+    }
+    div.top-msg {
+      max-width: 960px;
+    }
+  }
+}
