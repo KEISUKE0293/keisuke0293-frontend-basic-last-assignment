@@ -27,7 +27,7 @@ header {
       }
       div.nav-wrapper {
         ul.navigation {
-          li {
+          li.nav-item {
             list-style-type: none;
           }
           .link-text {
@@ -37,24 +37,29 @@ header {
             font-size: $fontsize-S;
             font-weight: 400;
             height: 50px;
+            text-decoration: none;
             width: 100%;
             &:hover {
               background-color: $black;
             }
           }
-          div.concept {
+          div.concept-top {
             align-items: center;
             display: flex;
-            height: 50px;
             justify-content: space-between;
-            button.navbar-toggler {
+            button.dropdown-btn {
+              background-color: transparent;
+              border: none;
               outline: none;
-              span.dropdown-text {
-                display: none;
+              position: relative;
+              img.minus-img {
+                position: absolute;
+                top: 3px;
+                right: 6px;
               }
             }
           }
-          .dropdown {
+          ul.dropdown {
             padding-left: 12px;
           }
         }
@@ -64,7 +69,6 @@ header {
       background-color: $black_50;
       padding: 0 30px;
       div.nav-container {
-        display: flex;
         flex-wrap: nowrap;
         button.humberger-toggler {
           display: none;
@@ -80,38 +84,48 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            li.nav-item {
-              .link-text {
-                height: 90px;
-                padding: 0 20px;
-                transition: color 0.2s ease;
-                width: initial;
-                &:hover {
-                  background-color: transparent;
-                  color: $gray_nobel;
-                }
+            .link-text {
+              height: 90px;
+              padding: 0 20px;
+              transition: color 0.2s ease;
+              &:hover {
+                background-color: transparent;
+                color: $gray_nobel;
               }
-              div.concept {
-                a.nav-link {
+            }
+            li.concept {
+              div.concept-top {
+                position: relative;
+                button.dropdown-btn {
                   display: none;
                 }
-                button.navbar-toggler {
-                  display: flex;
-                  border: none;
-                  padding: 0;
-                  img.plus-img {
-                    display: none;
-                  }
-                  span.dropdown-text {
-                    color: $white;
-                    display: inline-block;
-                    font-size: $fontsize-S;
-                    transition: color 0.2s ease;
+              }
+              ul.dropdown {
+                display: inline-block;
+                opacity: 0;
+                padding: 0;
+                position: absolute;
+                transform: translateY(-10px);
+                transition: 0.2s ease-in-out;
+                visibility: hidden;
+                li.nav-item {
+                  a.link-text {
+                    background-color: $black;
+                    height: initial;
+                    padding: 18px;
+                    transition: background-color 0.2s ease;
+                    width: 220px;
                     &:hover {
-                      background-color: transparent;
-                      color: $gray_nobel;
+                      background-color: $orange_bistre;
                     }
                   }
+                }
+              }
+              &:hover {
+                ul.dropdown {
+                  opacity: 1;
+                  transform: translateY(0);
+                  visibility: visible;
                 }
               }
             }
