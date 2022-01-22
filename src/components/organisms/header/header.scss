@@ -75,7 +75,7 @@ header {
         }
         a.brand-logo {
           img.brand-img {
-            width: 150px;
+            width: 140px;
           }
         }
         div.nav-wrapper {
@@ -117,6 +117,7 @@ header {
                     width: 220px;
                     &:hover {
                       background-color: $orange_bistre;
+                      color: $white;
                     }
                   }
                 }
