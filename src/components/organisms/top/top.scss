@@ -1,9 +1,7 @@
 @use "../../variables" as *;
 
-div.top {
+section.top {
   background-color: $black;
-  flex-direction: column;
-  display: flex;
   margin-bottom: 40px;
   div.top-image-wrapper {
     position: relative;
@@ -12,10 +10,11 @@ div.top {
       font-family: $fontfamily-mincho;
       font-size: $fontsize-L;
       margin: 0;
+      left: 50%;
       position: absolute;
       top: 50%;
-      left: 50%;
       transform: translate(-50%, -50%);
+      writing-mode: vertical-rl;
     }
     img {
       height: 360px;
