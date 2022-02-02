@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+section.plans {
+  display: flex;
+  flex-direction: column;
+  div.msg {
+    padding-top: 0;
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+  div.lists {
+    ul.plan {
+      margin-bottom: 24px;
+    }
+    @media (min-width: $breakpoint-md) {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+      ul.plan {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  a.button {
+    margin: auto;
+    @media (min-width: $breakpoint-md) {
+      margin: 0 auto 100px;
+    }
+  }
+}
