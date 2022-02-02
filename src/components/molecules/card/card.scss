@@ -42,6 +42,7 @@
     .card-text {
       line-height: 33.4px;
       margin: 0 35px 32px;
+      text-align: left;
       @media (min-width: $breakpoint-md) {
         margin: 0 46px 32px;
       }
