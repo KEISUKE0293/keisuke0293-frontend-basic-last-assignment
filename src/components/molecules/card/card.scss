@@ -2,10 +2,11 @@
 
 .card {
   border: none;
-  position: relative;
+  margin-bottom: 40px;
   .card-img {
     border-radius: 0;
     overflow: hidden;
+    position: relative;
     &::before {
       border-bottom: 150px solid transparent;
       border-left: 150px solid $white;
