@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-section.plans {
+section#plans {
   display: flex;
   flex-direction: column;
   div.msg {
@@ -8,12 +8,15 @@ section.plans {
     h2 {
       color: $orange_bistre;
     }
-  }
-  div.lists {
-    ul.plan {
-      margin-bottom: 24px;
+    p {
+      text-align: center;
     }
-    @media (min-width: $breakpoint-md) {
+  }
+  a.button {
+    margin: auto;
+  }
+  @media (min-width: $breakpoint-md) {
+    div.lists {
       display: grid;
       gap: 30px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -21,10 +24,7 @@ section.plans {
         margin-bottom: 40px;
       }
     }
-  }
-  a.button {
-    margin: auto;
-    @media (min-width: $breakpoint-md) {
+    a.button {
       margin: 0 auto 100px;
     }
   }
