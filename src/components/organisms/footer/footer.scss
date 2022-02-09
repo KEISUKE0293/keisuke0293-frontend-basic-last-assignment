@@ -14,44 +14,55 @@ section.footer {
       margin: 20px 0;
       text-align: center;
     }
-    div.icons {
+    ul.icons {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 14px;
-      a {
-        color: $black;
-        text-align: center;
-        &:hover {
-          color: $gray_nobel;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: $black;
+          text-align: center;
+          &:hover {
+            color: $gray_nobel;
+          }
         }
       }
     }
   }
-  div.nav-list {
+  ul.nav-list {
     background-color: $white_smoke;
     border-top: 1px solid $gray_nobel;
     border-bottom: 1px solid $gray_nobel;
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
     padding: 16px;
-    a.nav-link {
-      color: $black;
-      font-size: $fontsize-S;
-      padding: 0;
-      transition: color 0.2s ease;
-      &:hover {
-        color: $orange_bistre;
+    li {
+      list-style: none;
+      a.nav-link {
+        color: $black;
+        font-size: $fontsize-S;
+        padding: 0;
+        transition: color 0.2s ease;
+        &:hover {
+          color: $orange_bistre;
+        }
       }
     }
     @media (min-width: $breakpoint-md) {
       display: flex;
       justify-content: center;
       gap: 0;
-      a.nav-link {
-        padding: 0 8px;
-        &:not(:nth-child(1)) {
-          border-left: 1px solid $black;
+      li {
+        a.nav-link {
+          padding: 0 8px;
+          &:not(:nth-child(1)) {
+            border-left: 1px solid $black;
+          }
         }
       }
     }
