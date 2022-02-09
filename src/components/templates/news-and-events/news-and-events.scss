@@ -1,5 +1,11 @@
 @use "../../variables" as *;
 
 section#news-and-events {
+  background-color: $white_smoke;
   padding: 56px 0;
+  @media (max-width: $breakpoint-md) {
+    div.news{
+      margin-bottom: 35px;
+    }
+  }
 }
