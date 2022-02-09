@@ -3,6 +3,7 @@
 .plan {
   border-radius: 0;
   font-size: $fontsize-S;
+  margin-bottom: 24px;
   text-align: center;
   .plan-title {
     border-left: none;
@@ -30,9 +31,6 @@
   .list-item {
     padding: 20px 0;
     border-color: $gray_gainsboro;
-  }
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: 24px;
   }
   &:nth-child(2n + 1) {
     .plan-title {
