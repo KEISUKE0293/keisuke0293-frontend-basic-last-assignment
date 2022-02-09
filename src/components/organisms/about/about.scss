@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 section#about {
+  margin-bottom: 100px;
   div.image-wrapper {
     padding: 0;
     img.image {
@@ -9,7 +10,6 @@ section#about {
   }
   div.about-msg {
     background-color: $white_smoke;
-    text-align: center;
     h2 {
       color: $orange_bistre;
     }
