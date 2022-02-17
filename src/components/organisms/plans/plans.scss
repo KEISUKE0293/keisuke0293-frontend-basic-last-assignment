@@ -14,11 +14,12 @@ section#plans {
   }
   @media (min-width: $breakpoint-md) {
     div.lists {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      gap: 0 20px;
+      justify-content: space-between;
       ul.plan {
         margin-bottom: 40px;
+        width: 100%;
       }
     }
     a.button {
