@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-section.footer {
+footer {
   div.contact {
     align-items: center;
     display: flex;
@@ -16,15 +16,16 @@ section.footer {
     }
     ul.icons {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       gap: 14px;
       margin: 0;
       padding: 0;
       li {
         list-style: none;
+        text-align: center;
         a {
           color: $black;
-          text-align: center;
+          transition: color 0.2s ease;
           &:hover {
             color: $gray_nobel;
           }
@@ -32,13 +33,13 @@ section.footer {
       }
     }
   }
-  ul.nav-list {
+  ul.nav-lists {
     background-color: $white_smoke;
     border-top: 1px solid $gray_nobel;
     border-bottom: 1px solid $gray_nobel;
     display: grid;
     gap: 8px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0;
     padding: 16px;
     li {
@@ -57,12 +58,12 @@ section.footer {
       display: flex;
       justify-content: center;
       gap: 0;
-      li {
+      li.nav-lists {
+        &:nth-child(n + 2) {
+          border-left: 1px solid $black;
+        }
         a.nav-link {
           padding: 0 8px;
-          &:not(:nth-child(1)) {
-            border-left: 1px solid $black;
-          }
         }
       }
     }
