@@ -3,9 +3,22 @@
 section#news-and-events {
   background-color: $white_smoke;
   padding: 56px 0;
-  @media (max-width: $breakpoint-md) {
-    div.news{
-      margin-bottom: 35px;
+  div.news {
+    margin-bottom: 35px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    div.news {
+      margin-bottom: 0;
+      ul.news-list {
+        li.list-item {
+          height: 84.8px;
+          article {
+            a {
+              padding: 14.8025px 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
