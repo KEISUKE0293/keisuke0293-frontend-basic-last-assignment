@@ -9,16 +9,6 @@ section#news-and-events {
   @media (min-width: $breakpoint-lg) {
     div.news {
       margin-bottom: 0;
-      ul.news-list {
-        li.list-item {
-          height: 84.8px;
-          article {
-            a {
-              padding: 14.8025px 20px;
-            }
-          }
-        }
-      }
     }
   }
 }

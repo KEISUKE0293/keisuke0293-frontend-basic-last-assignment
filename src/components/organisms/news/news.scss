@@ -36,6 +36,14 @@
           }
         }
       }
+      @media (min-width: $breakpoint-lg) {
+        height: 84.8px;
+        article {
+          a {
+            padding: 14.8025px 20px;
+          }
+        }
+      }
     }
   }
   .news-and-events-more {
