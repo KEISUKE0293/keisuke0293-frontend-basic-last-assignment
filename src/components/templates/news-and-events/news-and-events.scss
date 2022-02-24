@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+section#news-and-events {
+  background-color: $white_smoke;
+  padding: 56px 0;
+  div.news {
+    margin-bottom: 35px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    div.news {
+      margin-bottom: 0;
+    }
+  }
+}
