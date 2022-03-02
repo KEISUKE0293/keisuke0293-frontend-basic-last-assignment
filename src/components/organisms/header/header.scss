@@ -63,6 +63,7 @@ header {
   }
   @media (min-width: $breakpoint-xl) {
     position: absolute;
+    z-index: 10;
     nav.header-nav {
       background-color: $black_50;
       padding: 0 30px;
@@ -106,7 +107,6 @@ header {
                 transform: translateY(-10px);
                 transition: 0.2s ease-in-out;
                 visibility: hidden;
-                z-index: 10;
                 li.nav-item {
                   a.link-text {
                     background-color: $black;
